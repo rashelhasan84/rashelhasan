@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md Rashel Hasan</title>
+<meta name="description" content="Md Rashel Hasan, Additional Director, Chief Economist's Unit, Bangladesh Bank. Articles and research on payments, financial inclusion, and monetary policy.">
+<meta property="og:title" content="Md Rashel Hasan | Economist, Bangladesh Bank">
+<meta property="og:description" content="Articles and research on cashless payments, Bangla QR, MFS, financial inclusion, and monetary policy in Bangladesh.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="profile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&family=Red+Hat+Text:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* VOICE: formal, calm, institutional; an economist's reading list.
+   IDEA: a central-bank publication cover, with a masthead band and an index of papers.
+   PICTURE: portrait set on a guilloche (banknote-style) pattern in the masthead.
+   COLOUR and TYPE: oxford blue band, white panels, magenta for links/actions; Red Hat Display + Red Hat Text.
+   LAYOUT: masthead band, sticky nav, filterable article index, research, career, contact footer. */
+:root{color-scheme:light dark;
+--bg:light-dark(#f6f7fb,#070f26);--panel:light-dark(#ffffff,#0e1a3a);--ink:light-dark(#13213f,#e8ecf6);
+--muted:light-dark(#55617d,#a3aec8);--line:light-dark(#dde2ee,#22305a);--band:#0b1f4b;--band2:#132c66;
+--acc:light-dark(#c40f52,#ff4f8b);--chip:light-dark(#eef1f8,#16244b)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.6 "Red Hat Text",system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3{font-family:"Red Hat Display",system-ui,sans-serif;line-height:1.08;text-wrap:balance;margin:0}
+h2{font-size:clamp(28px,3.4vw,38px);margin-bottom:8px}
+h3{font-size:19px;line-height:1.3}
+a{color:var(--acc)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto}
+.band{padding:clamp(36px,5vw,72px) max(5vw,16px)}
+/* masthead */
+.mast{background:var(--band);color:#fff;position:relative;overflow:hidden}
+.mast svg.guil{position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none}
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:center}
+.kicker{color:#c9d3ee;font-size:15px;margin:0 0 14px}
+.hero h1{font-size:clamp(40px,6vw,64px);letter-spacing:-.01em}
+.role{font-size:clamp(17px,2vw,20px);color:#dfe6f7;margin:14px 0 18px;max-width:34em}
+.bio{color:#c9d3ee;max-width:38em;margin:0 0 24px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;font-weight:600;text-decoration:none;font-size:15px}
+.btn.p{background:#ff4f8b;color:#0b1f4b}.btn.s{border:1.5px solid #8fa2d6;color:#fff}
+.btn.p:hover{background:#ff79a7}.btn.s:hover{background:var(--band2)}
+.portrait{justify-self:center;position:relative;width:min(340px,100%)}
+.portrait::before{content:"";position:absolute;inset:16px -16px -16px 16px;border:2px solid #ff4f8b;border-radius:18px}
+.portrait img{position:relative;display:block;width:100%;height:auto;aspect-ratio:976/1103;object-fit:cover;border-radius:18px;box-shadow:0 24px 50px rgba(0,0,0,.35)}
+.stats{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#2a4280;border-radius:14px;overflow:hidden;margin-top:clamp(32px,4vw,52px)}
+.stats div{background:var(--band2);padding:16px 18px}
+.stats b{display:block;font:700 clamp(24px,3vw,32px)/1.1 "Red Hat Display",sans-serif}
+.stats span{color:#c9d3ee;font-size:14px}
+/* nav */
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:4px;overflow-x:auto;padding:0 max(5vw,16px)}
+nav a{flex:none;color:var(--ink);text-decoration:none;font-weight:500;padding:14px 12px;font-size:15px}
+nav a:hover{color:var(--acc)}
+/* articles */
+.lead{color:var(--muted);max-width:44em;margin:0 0 24px}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:22px}
+.chip{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--chip);color:var(--ink);font:500 15px "Red Hat Text",sans-serif;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--band);color:#fff;border-color:var(--band)}
+.search{flex:1 1 220px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:16px "Red Hat Text",sans-serif}
+.list{display:grid;gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px;display:grid;grid-template-columns:110px minmax(0,1fr);gap:18px}
+.date{font:700 15px "Red Hat Display",sans-serif;color:var(--muted)}
+.date small{display:block;font:500 13px "Red Hat Text",sans-serif;margin-top:4px}
+.tag{display:inline-block;font-size:13px;font-weight:600;padding:2px 10px;border-radius:999px;background:var(--chip);color:var(--muted);margin-right:6px}
+.card h3 a{color:var(--ink);text-decoration:none}.card h3 a:hover{color:var(--acc);text-decoration:underline}
+.meta{color:var(--muted);font-size:14.5px;margin:6px 0 8px}
+.sum{margin:0 0 12px}
+.share{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.share a,.share button{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font:500 14px "Red Hat Text",sans-serif;text-decoration:none;cursor:pointer}
+.share a.read{background:var(--acc);border-color:var(--acc);color:#fff}
+.share a:hover,.share button:hover{border-color:var(--acc)}
+.empty{color:var(--muted);padding:20px 0}
+/* research + career */
+.alt{background:var(--panel);border-block:1px solid var(--line)}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
+.refs{list-style:none;padding:0;margin:16px 0 0}
+.refs li{padding:12px 0;border-top:1px solid var(--line)}
+.refs li:first-child{border-top:0}
+.refs em{font-style:italic}
+.tl{list-style:none;padding:0;margin:16px 0 0}
+.tl li{display:grid;grid-template-columns:118px minmax(0,1fr);gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+.tl li:first-child{border-top:0}
+.tl .yr{font:700 14.5px "Red Hat Display",sans-serif;color:var(--muted);white-space:nowrap}
+.tl b{font-weight:600}
+.small{font-size:14.5px;color:var(--muted)}
+/* footer */
+footer{background:var(--band);color:#dfe6f7}
+footer h2{color:#fff}
+footer a{color:#ff79a7}
+.contact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:18px 0 28px}
+.contact div{background:var(--band2);border-radius:12px;padding:16px 18px;overflow-wrap:anywhere}
+.contact span{display:block;font-size:13.5px;color:#a9b6dc}
+.disc{font-size:14px;color:#a9b6dc;border-top:1px solid #2a4280;padding-top:18px;margin:0}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--band);color:#fff;padding:10px 18px;border-radius:999px;font-size:14.5px;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+@media (max-width:820px){.hero{grid-template-columns:1fr}.portrait{width:min(170px,48%);order:-1;justify-self:start}.portrait::before{inset:10px -10px -10px 10px}.cols{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.contact{grid-template-columns:1fr}}
+@media (max-width:600px){.card{grid-template-columns:1fr;gap:6px;padding:18px}.tl li{grid-template-columns:1fr;gap:2px}}
+</style>
+</head>
+<body>
+
+<header class="mast band">
+  <svg class="guil" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs><ellipse id="r" cx="0" cy="0" rx="330" ry="120" fill="none" stroke="#2d4a91" stroke-width="1"/></defs>
+    <g id="rose" transform="translate(930 300)"></g>
+  </svg>
+  <div class="wrap hero">
+    <div>
+      <p class="kicker">Economist · Bangladesh Bank</p>
+      <h1>Md Rashel Hasan</h1>
+      <p class="role">Additional Director, Chief Economist's Unit, Bangladesh Bank</p>
+      <p class="bio">Research economist with more than a decade of central bank research. My work covers financial inclusion, digital payments, mobile financial services (MFS), and monetary policy analysis. I built a district-level financial inclusion index for Bangladesh and co-authored the Bank's working paper on QR-based payments. My current research tests whether MFS has substituted for cash, and how payment fees and interoperability shape adoption.</p>
+      <div class="btns">
+        <a class="btn p" href="#articles">Read my articles</a>
+        <a class="btn s" href="#research">Research</a>
+        <a class="btn s" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="portrait"><img src="profile.jpg" alt="Portrait of Md Rashel Hasan" width="976" height="1103"></div>
+  </div>
+  <div class="wrap stats">
+    <div><b>15+ years</b><span>at Bangladesh Bank since 2010</span></div>
+    <div><b>4</b><span>peer-reviewed journal articles</span></div>
+    <div><b>5</b><span>Bangladesh Bank working papers and research works</span></div>
+    <div><b>MA, ISS</b><span>Erasmus University Rotterdam</span></div>
+  </div>
+</header>
+
+<nav aria-label="Sections"><div class="wrap">
+  <a href="#articles">Articles</a><a href="#research">Research</a><a href="#career">Career</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</div></nav>
+
+<main>
+<section id="articles" class="band"><div class="wrap">
+  <h2>Articles and commentary</h2>
+  <p class="lead">Opinion pieces and policy writing in national newspapers. Each article links to the original publication and can be shared directly.</p>
+  <div class="tools" role="toolbar" aria-label="Filter articles">
+    <button class="chip" data-f="all" aria-pressed="true">All</button>
+    <button class="chip" data-f="payments" aria-pressed="false">Payments and fintech</button>
+    <button class="chip" data-f="monetary" aria-pressed="false">Monetary policy</button>
+    <button class="chip" data-f="public" aria-pressed="false">Public finance</button>
+    <input class="search" id="q" type="search" placeholder="Search titles and summaries" aria-label="Search articles">
+  </div>
+  <div class="list" id="list"></div>
+</div></section>
+
+<section id="research" class="band alt"><div class="wrap cols">
+  <div>
+    <h2>Journal articles</h2>
+    <ul class="refs">
+      <li>Murshed, S. M., Gates, S., Hasan, M. R., and Badiuzzaman, M. (2025). How inequality and repression affect the link between food insecurity and urban social disorder. <em>Peace Economics, Peace Science and Public Policy</em>, 31(2), 229–257. <a href="https://doi.org/10.1515/peps-2024-0059">doi:10.1515/peps-2024-0059</a></li>
+      <li>Parvez, M. A., Hossain, M. A., and Hasan, M. R. (2023). Availability of banking services and income inequality: Evidence from developing economies of Asia Pacific. <em>Journal of South Asian Studies</em>, 11(3), 243–252.</li>
+      <li>Murshed, S. M., Badiuzzaman, M., and Hasan, R. (2018). Food insecurity and conflict events in Africa. <em>Peace Economics, Peace Science and Public Policy</em>, 24(2). <a href="https://doi.org/10.1515/peps-2018-0007">doi:10.1515/peps-2018-0007</a></li>
+      <li>Hasan, M. R., and Murshed, S. M. (2017). Does civil war hamper financial development? <em>Defence and Peace Economics</em>, 28(2), 188–207. <a href="https://doi.org/10.1080/10242694.2015.1092205">doi:10.1080/10242694.2015.1092205</a></li>
+    </ul>
+    <h2 style="margin-top:36px">Conference papers</h2>
+    <ul class="refs">
+      <li>Hasan, M. R. (2026). Cash conduit or cash substitute? Evidence from mobile financial services in Bangladesh. Presented at the 11th Annual Banking Conference, Bangladesh Institute of Bank Management (BIBM), Dhaka. Submitted to the BBTA journal.</li>
+      <li>Hasan, M. R. (2019). Financial inclusion at district level in Bangladesh: A distance-based approach. 1st International FIN-B Financial Inclusion Conference and Inclusion Fair, Dhaka, 30–31 July.</li>
+      <li>Hasan, M. R., and Gates, S. (2018). Food insecurity and conflict events. Network of European Peace Scientists Conference.</li>
+    </ul>
+  </div>
+  <div>
+    <h2>Working papers</h2>
+    <ul class="refs">
+      <li>Hasan, M. R., Alam, M. K., and Begum, M. N. (2025). QR-based payment systems in Bangladesh: A comprehensive overview of developments and adoption barriers. Bangladesh Bank Working Paper No. 2501. <a href="https://www.bb.org.bd/pub/research/workingpaper/wp2501.pdf">PDF</a></li>
+      <li>Al Mamun, M. S., Hasan, M. R., Tareque, M., Alam, M. K., Islam, S., Ahmed, R., Islam, M. Z., Parvez, M. A., Sobhan, M. A., and Dewan, M. N. (2025). A study on value chain efficiency of the agricultural products in Bangladesh. Bangladesh Bank Special Research Work, SRW-2502.</li>
+      <li>Hasan, M. R., Ahmed, R., Rahman, M. H., and Naser, M. S. (2021). Revisiting the monetary conditions index for Bangladesh. Bangladesh Bank Working Paper No. 2101. <a href="https://www.bb.org.bd/en/index.php/publication/workingpaperlist">BB working papers</a></li>
+      <li>Hasan, M. R., and Islam, M. E. (2016). Financial inclusion index at district levels in Bangladesh: A distance-based approach. Bangladesh Bank Working Paper No. 1603. <a href="https://mpra.ub.uni-muenchen.de/71344/">MPRA</a></li>
+    </ul>
+    <h2 style="margin-top:36px">Policy notes</h2>
+    <ul class="refs">
+      <li>Hasan, M. R., Sobhan, M. A., and Islam, M. E. (2021). The recent banks' deposit growth: What are the potential sources? Policy Note No. 2106, Bangladesh Bank.</li>
+      <li>Hasan, M. R., and Islam, E. (2021). Changing currency holding patterns during the COVID-19 pandemic in Bangladesh. Policy Note No. 2101, Bangladesh Bank.</li>
+      <li>Hasan, M. R., and Islam, E. (2020). A brief on the policy responses to the economic fallout of COVID-19 in Bangladesh. Policy Note No. 2001, Bangladesh Bank.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="career" class="band"><div class="wrap cols">
+  <div>
+    <h2>Career</h2>
+    <ul class="tl">
+      <li><span class="yr">2023–present</span><div><b>Additional Director</b>, Chief Economist's Unit, Bangladesh Bank. Supervises macroeconomic research and the Bangladesh Bank Quarterly write-ups on banking, prices, fiscal, and capital markets. Supports drafting of the half-yearly Monetary Policy Statement. Leads research on MFS, QR-based payments, and cash use.</div></li>
+      <li><span class="yr">2017–2023</span><div><b>Joint Director</b>, Chief Economist's Unit, Bangladesh Bank. Quarterly forecasts of GDP, inflation, and other macroeconomic variables; policy papers; quarterly fiscal report.</div></li>
+      <li><span class="yr">2015–2017</span><div><b>Deputy Director</b>, Chief Economist's Unit, Bangladesh Bank. Quarterly reports on banking sector development and inflation; capital market notes.</div></li>
+      <li><span class="yr">2018</span><div><b>Consultant</b>, International Institute of Social Studies, Erasmus University Rotterdam. Panel data analysis of food insecurity and post-civil-war power sharing.</div></li>
+      <li><span class="yr">2010–2013</span><div><b>Assistant Director</b>, Credit Information Bureau, Bangladesh Bank</div></li>
+      <li><span class="yr">2009–2013</span><div><b>Earlier roles</b>: Research Fellow and Consultant, icddr,b; Consultant, Advancing Public Interest Trust; Monitoring Officer, NGO Forum</div></li>
+    </ul>
+  </div>
+  <div>
+    <h2>Training</h2>
+    <ul class="tl">
+      <li><span class="yr">2022</span><div>Supply-Use and Input-Output Tables, IMF and ADB, Thailand</div></li>
+      <li><span class="yr">2018</span><div>Financial Programming and Policies, IMF-SARTTAC, India</div></li>
+      <li><span class="yr">2018</span><div>Model-Based Monetary Policy, IMF Singapore Training Institute</div></li>
+      <li><span class="yr">2017</span><div>Fiscal Analysis and Forecasting, IMF-SARTTAC, India</div></li>
+    </ul>
+    <h2 style="margin-top:36px">Methods and skills</h2>
+    <ul class="refs">
+      <li>Time-series econometrics, including ARDL bounds testing and cointegration analysis</li>
+      <li>Composite indicators, including distance-based financial inclusion indexes</li>
+      <li>Payments and MFS data analysis: transaction composition, cash-in and cash-out flows, cross-country fee comparisons</li>
+      <li>Stata, R, EViews, S-PLUS · English and Bengali</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="education" class="band alt"><div class="wrap">
+  <h2>Education</h2>
+  <ul class="tl">
+    <li><span class="yr">2013–2014</span><div><b>MA in Development Studies</b> (Economics of Development), International Institute of Social Studies, Erasmus University Rotterdam. Joint Japan/World Bank Graduate Scholarship. Thesis: <a href="https://thesis.eur.nl/pub/17364/M.R.-Hasan.pdf">Financial Development and Armed Conflict: A Cross-Country Analysis</a>.</div></li>
+    <li><span class="yr">2008–2009</span><div><b>MSc in Applied Statistics</b>, Institute of Statistical Research and Training (ISRT), University of Dhaka</div></li>
+    <li><span class="yr">2003–2007</span><div><b>BSc in Applied Statistics</b>, ISRT, University of Dhaka</div></li>
+  </ul>
+</div></section>
+</main>
+
+<footer id="contact" class="band"><div class="wrap">
+  <h2>Contact</h2>
+  <p>For research collaboration, speaking, or comments on my writing, please get in touch.</p>
+  <div class="contact">
+    <div><span>Email</span><a href="mailto:rashel.hasan84@gmail.com">rashel.hasan84@gmail.com</a></div>
+    <div><span>Research profile</span><a href="https://ideas.repec.org/a/taf/defpea/v28y2017i2p188-207.html">RePEc / IDEAS</a></div>
+    <div><span>Location</span>Dhaka, Bangladesh</div>
+  </div>
+  <p class="disc">The views expressed in the articles and papers listed here are those of the author and do not necessarily represent the views of Bangladesh Bank. © <span id="yr">2026</span> Md Rashel Hasan.</p>
+</div></footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+{
+/* To add a new article: copy one block below, edit it, and save. Newest first is automatic. */
+const ARTICLES = [
+  {date:"2026-08-22", outlet:"Daily Times of Bangladesh", topic:"public",
+   title:"Time to make savings certificates fully digital",
+   authors:"Opinion",
+   summary:"National Savings Certificates hold about 30 percent of domestic public debt, yet still rely on paper forms and branch visits. The article proposes linking the National Savings Department's systems with banks and MFS so savers can buy, redeem, and receive payouts through their verified apps.",
+   url:"https://tob.news/time-to-make-savings-certificates-fully-digital/"},
+  {date:"2026-08-21", outlet:"The Financial Express", topic:"payments",
+   title:"Cashless ambitions hinge on unlocking P2P payments",
+   authors:"With Raju Ahmed",
+   summary:"Bangla QR now covers merchant payments, but everyday transfers between individuals remain largely in cash. The article argues for extending Bangla QR to personal accounts, a separate low-value P2P category, and simpler entry of account details.",
+   url:"https://thefinancialexpress.com.bd/views/cashless-ambitions-hinge-on-unlocking-p2p-payments"},
+  {date:"2026-01-18", outlet:"The Financial Express", topic:"payments",
+   title:"QR-based payment systems in Bangladesh: Overcoming the adoption barriers",
+   authors:"With Md Khorshed Alam and Mst Nurnaher Begum · Part 2 of 2",
+   summary:"Draws lessons from Brazil's Pix, Singapore's PayNow, and Malaysia's DuitNow, and sets out steps to overcome merchant and consumer barriers to Bangla QR adoption.",
+   url:"https://today.thefinancialexpress.com.bd/print/overcoming-the-adoption-barriers-1768657602"},
+  {date:"2026-01-16", outlet:"The Financial Express", topic:"payments",
+   title:"QR-based payment systems in Bangladesh: An overview of developments",
+   authors:"With Md Khorshed Alam and Mst Nurnaher Begum · Part 1 of 2",
+   summary:"Traces Bangladesh's reliance on cash in retail payments, the rollout of interoperable Bangla QR, and the fee and security concerns that slowed adoption. Abridged from Bangladesh Bank Working Paper No. 2501.",
+   url:"https://thefinancialexpress.com.bd/views/views/qr-based-payment-systems-in-bangladesh"},
+  {date:"2022-03-16", outlet:"The Financial Express", topic:"monetary",
+   title:"Revisiting the monetary conditions index for Bangladesh",
+   authors:"With Raju Ahmed, Md Habibour Rahman and Mahmud Salahuddin Naser · Part 1 of 2",
+   summary:"Explains why a monetary conditions index, combining interest rate and exchange rate effects, helps assess the overall monetary stance as Bangladesh Bank moves toward a more flexible exchange rate.",
+   url:"https://today.thefinancialexpress.com.bd/print/revisiting-the-monetary-conditions-index-for-bangladesh-1647348704"},
+  {date:"2022-03", outlet:"The Financial Express", topic:"monetary",
+   title:"Construction of monetary conditions index and implications",
+   authors:"With Raju Ahmed, Md Habibour Rahman and Mahmud Salahuddin Naser · Part 2 of 2",
+   summary:"Constructs a monthly MCI for Bangladesh for 2004 to 2020, with weights from a cointegration-based aggregate demand model, and interprets its movements for policy.",
+   url:"https://thefinancialexpress.com.bd/home/construction-of-monetary-conditions-index-implications-1647440872"}
+];
+
+const M=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=d=>{const p=d.split("-");return p.length===3?`${+p[2]} ${M[p[1]-1]}<small>${p[0]}</small>`:`${M[p[1]-1]}<small>${p[0]}</small>`};
+const label={payments:"Payments and fintech",monetary:"Monetary policy",public:"Public finance"};
+const list=document.getElementById("list"), q=document.getElementById("q"), toast=document.getElementById("toast");
+let filter="all";
+
+function shareLinks(a){
+  const u=encodeURIComponent(a.url), t=encodeURIComponent(a.title+" by Md Rashel Hasan");
+  return `<a class="read" href="${esc(a.url)}" target="_blank" rel="noopener">Read article</a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=${u}" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=${u}" target="_blank" rel="noopener">Facebook</a>
+  <a href="https://twitter.com/intent/tweet?url=${u}&text=${t}" target="_blank" rel="noopener">X</a>
+  <a href="https://wa.me/?text=${t}%20${u}" target="_blank" rel="noopener">WhatsApp</a>
+  <button type="button" data-copy="${esc(a.url)}">Copy link</button>`;
+}
+
+function render(){
+  const term=q.value.trim().toLowerCase();
+  const rows=ARTICLES.slice().sort((a,b)=>b.date.localeCompare(a.date))
+    .filter(a=>filter==="all"||a.topic===filter)
+    .filter(a=>!term||(a.title+" "+a.summary+" "+a.authors).toLowerCase().includes(term));
+  list.innerHTML=rows.length?rows.map(a=>`<article class="card">
+    <div class="date">${fmt(a.date)}</div>
+    <div>
+      <span class="tag">${esc(a.outlet)}</span><span class="tag">${esc(label[a.topic]||"")}</span>
+      <h3 style="margin-top:8px"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></h3>
+      <p class="meta">${esc(a.authors)}</p>
+      <p class="sum">${esc(a.summary)}</p>
+      <div class="share">${shareLinks(a)}</div>
+    </div></article>`).join(""):`<p class="empty">No articles match this search.</p>`;
+}
+
+document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{
+  filter=b.dataset.f;
+  document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c===b));
+  render();
+}));
+q.addEventListener("input",render);
+list.addEventListener("click",async e=>{
+  const b=e.target.closest("[data-copy]"); if(!b) return;
+  try{await navigator.clipboard.writeText(b.dataset.copy);show("Link copied")}catch(err){show("Copy failed. Long-press the title to copy.")}
+});
+function show(m){toast.textContent=m;toast.classList.add("on");setTimeout(()=>toast.classList.remove("on"),1800)}
+
+/* guilloche pattern in the masthead */
+const g=document.getElementById("rose");
+g.innerHTML=Array.from({length:36},(_,i)=>`<use href="#r" transform="rotate(${i*5})"/>`).join("");
+document.getElementById("yr").textContent=new Date().getFullYear();
+render();
+}
+</script>
+</body>
+</html>
